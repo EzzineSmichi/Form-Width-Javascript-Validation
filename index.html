@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/reset.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Form With Javascript Validation</title>
+</head>
+<body>
+    
+        <main class="content">
+            <h1>Inscription</h1> 
+            <hr>
+            <form method="post" action="#">
+                <div class="champ">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name" required>
+                    <span id="nameError"></span>
+                </div>
+                
+                <div class="champ">
+                    <label for="mail">Email :</label>
+                    <input type="email" name="mail" id="mail" required>
+                    <span id="mailError"></span>
+                </div>
+
+                <div class="champ">
+                    <label for="phone">Phone Number :</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <span id="phoneError"></span>
+                </div>
+
+                <div class="champ">
+                    <label>Gender :</label>
+                    <div class="gender">
+                        <div>
+                            <input type="radio" name="gender" id="M">
+                            <label for="M">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gender" id="F">
+                            <label for="F">Female</label>
+                        </div>
+                    </div>
+                    <span id="genderError"></span>
+                </div>
+                
+                <div class="check">
+                    <div>
+                        <input type="checkbox" name="checking" id="checking">
+                        <label for="checking">I agree </label>
+                    </div>
+                    <span id="checkError"></span>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" id="validation">Validation</button>
+                </div>
+
+            </form>
+        </main> 
+    
+</body>
+</html>
